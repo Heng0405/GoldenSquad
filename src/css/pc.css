@@ -1,0 +1,21 @@
+.logo{
+    algin-items: center;
+    display: flex;
+}
+.logo img{
+    width: 88px;
+    height: 88px;
+}
+
+.logo span{
+    fond-size: 60px;
+    padding-left: 20px;
+}
+
+.footer{
+    text-align: center;
+}
+
+.register{
+    float: right !important;
+}
