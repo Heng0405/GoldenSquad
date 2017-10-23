@@ -88,8 +88,8 @@ class PCHeader extends React.Component {
         <Button type="primary" htmlType="button">{this.state.userNickName}</Button>
         &nbsp;&nbsp;
           <Router>
-          <Link to='/'>
-            <Button type="dashed" htmlType="button">My Account</Button>
+          <Link target="_blank" to={'/#/usercenter'}>
+            <Button type="dashed" htmlType="button">User Center</Button>
           </Link>
           </Router>
 
