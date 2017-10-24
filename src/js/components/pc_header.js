@@ -48,8 +48,8 @@ class PCHeader extends React.Component {
     //submit data to API
     e.preventDefault();
     var myFetchOptions = {
-      method: 'GET'
-    };
+    method: 'GET'
+  };
     var formData = this.props.form.getFieldsValue();
     console.log(formData);
     fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=" + this.state.action
