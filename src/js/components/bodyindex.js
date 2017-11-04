@@ -1,11 +1,11 @@
 import React from 'react';
-import BodyChild from './bodychild'
+import BodyChild from './bodychild';
+import PropTypes from 'prop-types'; // ES6
 
 export default class BodyIndex extends React.Component {
   constructor(){
     super(); //调用基类的所有的初始化方法
     this.state =  {
-      username : "Parry",
       age : 20
     }; //初始化赋值
   }
@@ -27,13 +27,21 @@ export default class BodyIndex extends React.Component {
     return (
       <div>
         <h2>The content of this page!</h2>
-        <p>{this.props.userid}</p>
+        <p>value transferred by father page pc_index, userId : {this.props.userid}</p>
+        <p> userName : {this.props.userName}</p>
         <p>{this.state.age}</p>
         <input type="button" value="submit" onClick={this.changeUserInfos.bind(this,99)} />
-        <BodyChild handleChildValue={this.handleChildValue.bind(this)}/>
+        <BodyChild {...this.props} sex={"woman"} handleChildValue={this.handleChildValue.bind(this)}/>
       </div>
     )
   }
 }/**
  * Created by etudiant on 04/11/2017.
  */
+//使用 PropTypes 进行类型检查
+  BodyIndex.propTypes = {
+    userid: PropTypes.number.isRequired
+  };
+  BodyIndex.defaultProps={
+    userName : 'Stranger'
+  }

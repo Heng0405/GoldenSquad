@@ -12,6 +12,7 @@ export default class BodyChild extends React.Component {
         <p>Input of the child page for the age :
           <input type="text" onChange={this.props.handleChildValue} />
         </p>
+        <p>{this.props.userid} {this.props.userName} {this.props.sex}</p>
 
       </div>
     )

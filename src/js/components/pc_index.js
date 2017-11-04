@@ -13,7 +13,7 @@ export default class PCIndex extends React.Component {
       <div>
       <PCHeader> </PCHeader>
       <ButtonDemo></ButtonDemo>
-        <BodyIndex userid={123}></BodyIndex>
+        <BodyIndex userid={123} ></BodyIndex>
       <PCFooter> </PCFooter>
       </div>
 
