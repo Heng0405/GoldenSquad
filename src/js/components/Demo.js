@@ -1,6 +1,7 @@
 import { Button, Icon } from 'antd';
 import React from 'react';
 import {Row, Col} from 'antd';
+import { Input } from 'antd';
 export default class ButtonDemo extends React.Component {
 
   demoTest(){
@@ -27,6 +28,8 @@ export default class ButtonDemo extends React.Component {
           <Col span={9}></Col>
         </Row>
       </div>
+
+
     )
   }
 }

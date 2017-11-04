@@ -11,7 +11,7 @@ const TabPane=Tabs.TabPane;
 
 class PCHeader extends React.Component {
   constructor() {
-    super();
+    super();     //initialiser
     this.state = {
       current: 'Account',
       modalVisible: false,
