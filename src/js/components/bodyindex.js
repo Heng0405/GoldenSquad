@@ -11,6 +11,7 @@ export default class BodyIndex extends React.Component {
   }
   changeUserInfos(age){
     this.setState({age:age})
+    console.log("testRef=="+this.refs.submitButton)
   };
   handleChildValue(event){
     this.setState({
@@ -30,13 +31,14 @@ export default class BodyIndex extends React.Component {
         <p>value transferred by father page pc_index, userId : {this.props.userid}</p>
         <p> userName : {this.props.userName}</p>
         <p>{this.state.age}</p>
-        <input type="button" value="submit" onClick={this.changeUserInfos.bind(this,99)} />
+        <input ref="submitButton" type="button" value="submit" onClick={this.changeUserInfos.bind(this,99)} />
         <BodyChild {...this.props} sex={"woman"} handleChildValue={this.handleChildValue.bind(this)}/>
       </div>
     )
   }
 }/**
  * Created by etudiant on 04/11/2017.
+ * ...this.props transfer all the data
  */
 //使用 PropTypes 进行类型检查
   BodyIndex.propTypes = {
