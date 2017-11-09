@@ -20,3 +20,15 @@
 .size{
     font-size: 16px;
 }
+.container{
+    padding-top: 10px;
+}
+.leftContainer{
+    width: 400px;
+    float: right;
+}
+
+.carousel{
+    width: 400px;
+    float: none;
+}
